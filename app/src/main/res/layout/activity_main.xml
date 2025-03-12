@@ -5,15 +5,199 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#2C2C2C"
+    android:orientation="vertical"
+    android:textAlignment="textEnd"
+    android:textDirection="firstStrongRtl">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calculator"
+        android:id="@+id/tv_Result"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_marginTop="208dp"
+        android:paddingHorizontal="12dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="sans-serif-medium"
+        android:text="0"
+        android:textColor="#E0E0E0"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="452dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="0dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="4dp">
+
+            <Button
+                android:id="@+id/btnDelete"
+                style="@style/BtnDelete"
+                android:text="Del" />
+
+            <Button
+                android:id="@+id/btn_group"
+                style="@style/CalculatorButton"
+                android:text="()" />
+
+            <Button
+                android:id="@+id/btnPercent"
+                style="@style/CalculatorButton"
+                android:text="%" />
+
+            <Button
+                android:id="@+id/btnDivide"
+                style="@style/CalculatorButton"
+                android:text="/" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="0dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="4dp">
+
+            <Button
+                android:id="@+id/btn_seven"
+                style="@style/CalculatorButton"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/btn_eight"
+                style="@style/CalculatorButton"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/btn_nine"
+                style="@style/CalculatorButton"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/btnMultiply"
+                style="@style/CalculatorButton"
+                android:text="x" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="0dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="4dp">
+
+            <Button
+                android:id="@+id/btn_four"
+                style="@style/CalculatorButton"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/btn_five"
+                style="@style/CalculatorButton"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/btn_six"
+                style="@style/CalculatorButton"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/btnSubstract"
+                style="@style/CalculatorButton"
+                android:text="-" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="0dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="4dp">
+
+            <Button
+                android:id="@+id/btn_one"
+                style="@style/CalculatorButton"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/btn_two"
+                style="@style/CalculatorButton"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/btn_three"
+                style="@style/CalculatorButton"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                style="@style/CalculatorButton"
+                android:text="+" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="0dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="4dp">
+
+            <Button
+                android:id="@+id/btn_point"
+                style="@style/CalculatorButton"
+                android:text="." />
+
+            <Button
+                android:id="@+id/btn_zero"
+                style="@style/CalculatorButton"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/btnEquals"
+                style="@style/CalculatorButton"
+                android:text="=" />
+
+            <Button
+                android:id="@+id/space"
+                style="@style/CalculatorButton"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

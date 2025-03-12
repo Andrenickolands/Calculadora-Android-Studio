@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CalculatorButton">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:background">#DCCEB4</item>
+        <item name="android:shadowDx">4</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowColor">#373737</item>
+        <item name="android:backgroundTint">#DCCEB4</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textFontWeight">800</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shape">rectangle</item>
+    </style>
+    <style name="BtnDelete">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:background">#DCCEB4</item>
+        <item name="android:shadowDx">4</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowColor">#373737</item>
+        <item name="android:backgroundTint">#DCCEB4</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textFontWeight">800</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shape">rectangle</item>
+    </style>
+</resources>
